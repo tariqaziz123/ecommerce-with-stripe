@@ -37,6 +37,9 @@ class Home extends Component {
                     <div className="col-md-4">
                     <Card className="mb-4">
                         <CardBody>
+                            {item.image.map((pictures) =>(
+                                <img src={pictures} alt={item.title} />
+                            ))}
                             <CardTitle tag="h5">{item.title}</CardTitle>
                             <CardSubtitle tag="h6">Rs. {item.price}</CardSubtitle>
                             <CardText>{item.category}</CardText>
