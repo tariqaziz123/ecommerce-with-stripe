@@ -41,6 +41,7 @@ class Home extends Component {
                                 <img src={pictures} alt={item.title} />
                             ))}
                             <CardTitle tag="h5">{item.title}</CardTitle>
+                            <CardText>{item.description}</CardText>
                             <CardSubtitle tag="h6">Rs. {item.price}</CardSubtitle>
                             <CardText>{item.category}</CardText>
                             {this.props.isAuthenticated ? 
