@@ -18,6 +18,9 @@ const ItemSchema = new Schema({
         type: Number,
         required: true
     },
+    color:{
+        type:Array,
+    },
     image:{
         type:Array,
     },

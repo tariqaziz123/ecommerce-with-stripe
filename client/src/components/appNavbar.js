@@ -41,13 +41,13 @@ class AppNavbar extends Component {
                     </span>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/">Home</NavLink>
+                    <NavLink href="/"><img style={{width:'30px'}} src='/Assets/images/eco-home.png' /></NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/cart">Cart</NavLink>
+                    <NavLink href="/cart"><img style={{width:'30px'}} src='/Assets/images/shopping-cart.png' /></NavLink>
                 </NavItem>
                 <NavItem className="mr-2">
-                    <NavLink href="/orders">Orders</NavLink>
+                    <NavLink href="/orders"><img style={{width:'40px'}} src='/Assets/images/delivery-truck.png' /></NavLink>
                 </NavItem>
                 <NavItem>
                     <Logout/>

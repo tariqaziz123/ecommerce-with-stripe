@@ -64,11 +64,11 @@ class Cart extends Component {
                                 <CardSubtitle tag="h6">Rs. {item.price}</CardSubtitle>
                                 <div style={qtyBox}>
                                   <p style={{...qtyBtn, border:"1px solid red", color: "Red"}} onClick={() => this.onUpdateQuantity(user._id, item.productId, item.quantity - 1)}>
-                                    -1
+                                    -
                                   </p>
                                   <CardText>Quantity - {item.quantity}</CardText>
                                   <p style={{...qtyBtn, border:"1px solid green", color: "green"}} onClick={() => this.onUpdateQuantity(user._id, item.productId, item.quantity + 1)}>
-                                    +1
+                                    +
                                   </p>
                                 </div>
                                 <Button color="danger" onClick={this.onDeleteFromCart.bind(this, user._id, item.productId)}>Delete</Button>
