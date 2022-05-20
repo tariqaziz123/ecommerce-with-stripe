@@ -5,6 +5,9 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getItems } from '../actions/itemActions';
 import { addToCart } from '../actions/cartActions';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import './styles/Home.css'; 
 
 class Home extends Component {
 
@@ -37,9 +40,11 @@ class Home extends Component {
                     <div className="col-md-4">
                     <Card className="mb-4">
                         <CardBody>
+                            <Carousel showArrows={true} className="product__image">
                             {item.image.map((pictures) =>(
-                                <img src={pictures} alt={item.title} />
+                                <img src={pictures} width='70px' alt={item.title} />
                             ))}
+                            </Carousel>
                             <CardTitle tag="h5">{item.title}</CardTitle>
                             <CardText>{item.description}</CardText>
                             <CardSubtitle tag="h6">Rs. {item.price}</CardSubtitle>

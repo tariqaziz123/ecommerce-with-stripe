@@ -1,0 +1,20 @@
+.product__image .carousel .slide img {
+    width: 70%;
+    vertical-align: top;
+    border: 0;
+}
+
+.product__image .carousel .carousel-status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px rgba(92, 11, 11, 0.9);
+    color: black;
+    font-weight: 700;
+}
+
+.carousel .control-next.control-arrow:before {
+    border-left: 8px solid darkgreen;
+}
