@@ -1,0 +1,10 @@
+.header{
+    background-color: #1f1f1f !important;
+}
+
+.brand__logo{
+    border:1px solid goldenrod;
+    border-radius:50px;
+    padding:2px;
+    width:200px;
+}
